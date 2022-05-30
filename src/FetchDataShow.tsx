@@ -4,6 +4,7 @@ import User from "./User";
 interface UserData {
   name: string;
   email: string;
+  userName: string;
 }
 const FetchDataShow = () => {
   const [users, setUser] = useState<UserData>({});

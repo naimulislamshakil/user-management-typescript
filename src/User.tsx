@@ -1,6 +1,12 @@
-import React from "react";
+import React, { FC } from "react";
 
-const User = () => {
+interface Users {
+  id?: number;
+  name: string;
+  userName: string;
+  email: string;
+}
+const User: FC<Users> = ({ user }) => {
   return <div>kjbdjcj</div>;
 };
 
