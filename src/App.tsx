@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import IncressDecress from "./IncressDecress";
 
 function App() {
   // assin variable using typescript
@@ -76,7 +77,11 @@ function App() {
   };
   console.log(person);
 
-  return <div className="App"></div>;
+  return (
+    <div className="App">
+      <IncressDecress></IncressDecress>
+    </div>
+  );
 }
 
 export default App;
