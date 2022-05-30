@@ -27,7 +27,24 @@ function App() {
   console.log(boolian);
 
   // assin a function type variable
-  const books = () => 55;
+  // 1. when you return anything
+  // I am return a number so i declaire number
+  const arr = (): number => 55;
+  console.log(arr());
+
+  // 2.when you input some parameter
+  // declaire parameter type of variable
+  // you can use interface
+  const parameterFun = (firstName: string, age: number) => {
+    console.log(firstName, age);
+  };
+  console.log(parameterFun("Naimul", 23));
+
+  // 3. when you cannot return
+  const nothing = (): void => {
+    console.log("I am using typescript");
+  };
+  console.log(nothing());
 
   // assin a array type variable
   const numberArray: number[] = [1, 2, 3, 4, 5, 6, 7];
