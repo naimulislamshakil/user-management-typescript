@@ -78,7 +78,7 @@ function App() {
   console.log(person);
 
   return (
-    <div className="App">
+    <div className="App container mt-5">
       <IncressDecress></IncressDecress>
     </div>
   );
