@@ -23,10 +23,14 @@ const FetchDataShow = () => {
       .then((res) => res.json())
       .then((data) => setUser(data));
   }, []);
+
+  const addUser = (): void => {
+    console.log("click");
+  };
   return (
     <div>
       {users.map((user) => (
-        <User key={user.id} user={user}></User>
+        <User key={user.id} user={user} addUser={addUser}></User>
       ))}
     </div>
   );
