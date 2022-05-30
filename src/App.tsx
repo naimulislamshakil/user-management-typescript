@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import FetchDataShow from "./FetchDataShow";
 import IncressDecress from "./IncressDecress";
 
 function App() {
@@ -80,6 +81,7 @@ function App() {
   return (
     <div className="App container mt-5">
       <IncressDecress></IncressDecress>
+      <FetchDataShow></FetchDataShow>
     </div>
   );
 }
