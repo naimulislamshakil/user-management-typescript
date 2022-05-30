@@ -3,16 +3,21 @@ import UserDetils from "./Type/models";
 
 interface Props {
   user: UserDetils;
-  addUser: () => void;
+  addUser: (user: UserDetils) => void;
 }
 const User: FC<Props> = ({ user, addUser }) => {
-  const { name, userName, email } = user;
+  const { name, username, email } = user;
   return (
-    <div className="d-flex flex-column justify-content-center">
+    <div className="d-flex flex-column justify-content-center mt-3">
       <h1>{name}</h1>
-      <h3>{userName}</h3>
+      <h3>{username}</h3>
       <h4>{email}</h4>
-      <button>Add Me</button>
+      <button
+        className="w-25 mx-auto btn btn-success"
+        onClick={() => addUser(user)}
+      >
+        Add Me
+      </button>
     </div>
   );
 };

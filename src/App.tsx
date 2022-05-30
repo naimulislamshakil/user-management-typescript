@@ -2,6 +2,8 @@ import React from "react";
 import "./App.css";
 import FetchDataShow from "./FetchDataShow";
 import IncressDecress from "./IncressDecress";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   // assin variable using typescript
@@ -82,6 +84,7 @@ function App() {
     <div className="App container mt-5">
       <IncressDecress></IncressDecress>
       <FetchDataShow></FetchDataShow>
+      <ToastContainer></ToastContainer>
     </div>
   );
 }
